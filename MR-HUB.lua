@@ -26,3 +26,14 @@ local KillAll = Divider:Button{
        print("All players killed.")
    end
 }
+
+
+local Quit = QuitDivider:Button{
+   Name = "Closes the ui library.",
+   Callback = function()
+       UI:Quit{
+           Message = "Fuck off...", -- closing message
+           Length = 1 -- seconds the closing message shows for
+       }
+   end
+}
