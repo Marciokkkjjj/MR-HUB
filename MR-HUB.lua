@@ -1,4 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "MK-HUB", HidePremium = false, SaveConfig = true})
 
 OrionLib:MakeNotification({
@@ -17,9 +18,6 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
-      		-- Obtém o jogador local (você)
-local player = game.Players.LocalPlayer
-
 -- Função para desenhar a linha vermelha
 local function DrawLineToPlayers()
     local players = game.Players:GetPlayers()
