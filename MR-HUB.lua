@@ -16,3 +16,13 @@ local Divider = Main:Divider{
 local QuitDivider = Main:Divider{
    Name = "Quit"
 }
+
+--codigos--
+
+local KillAll = Divider:Button{
+   Name = "Kill all",
+   Description = "Kills all the players in the game!",
+   Callback = function()
+       print("All players killed.")
+   end
+}
