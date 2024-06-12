@@ -18,29 +18,6 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
--- Função para desenhar a linha vermelha
-local function DrawLineToPlayers()
-    local players = game.Players:GetPlayers()
-
-    for _, otherPlayer in pairs(players) do
-        if otherPlayer ~= player then
-            -- Cria uma linha vermelha
-            local line = Instance.new("LineHandleAdornment")
-            line.Parent = player.Character
-            line.Adornee = otherPlayer.Character
-            line.Length = (otherPlayer.Character.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude
-            line.Color3 = Color3.new(1, 0, 0) -- Vermelho
-
-            -- Atualiza a posição da linha a cada quadro
-            game:GetService("RunService").RenderStepped:Connect(function()
-                line.Length = (otherPlayer.Character.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude
-            end)
-        end
-    end
-end
-
--- Chama a função para desenhar a linha
-DrawLineToPlayers()
-
+local player = game.Players.LocalPlayer
   	end    
 })
