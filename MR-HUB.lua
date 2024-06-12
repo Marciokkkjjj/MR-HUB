@@ -17,5 +17,4 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
-			loadstring(game:HttpGet('https://pastebin.com/raw/egFSaZPp'))()
-})
+			
