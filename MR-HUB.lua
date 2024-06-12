@@ -23,7 +23,7 @@ local player = game.Players.LocalPlayer
 
 -- Função para teletransportar até a mansão
 local function TeleportToMansion()
-    local mansionPosition = Vector3.new(123, 45, 678) -- Substitua pelos valores reais da posição da mansão
+    local mansionPosition = Vector3.new(player + 88) -- Substitua pelos valores reais da posição da mansão
 
     -- Teleporta o jogador até a posição da mansão
     player.Character.HumanoidRootPart.CFrame = CFrame.new(mansionPosition)
