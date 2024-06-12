@@ -37,3 +37,13 @@ local Quit = QuitDivider:Button{
        }
    end
 }
+
+local Quit = QuitDivider:Button{
+   Name = "Closes the ui library.",
+   Callback = function()
+       UI:Main shit{
+           Message = "Fuck off...", -- closing message
+           Length = 1 -- seconds the closing message shows for
+       }
+   end
+}
