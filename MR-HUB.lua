@@ -2,6 +2,12 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "MK-HUB", HidePremium = false, SaveConfig = true})
 
+OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 
 local Tab = Window:MakeTab({
 	Name = "Tab 1",
